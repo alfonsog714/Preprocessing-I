@@ -166,6 +166,10 @@ hr {
 .container {
   max-width: 1400px;
   margin: 0 auto;
+
+  @media (max-width: 500px) {
+    width: 400px;
+  }
 }
 
 // header
@@ -220,7 +224,7 @@ header {
     width: 20rem;
     height: 20rem;
     border-radius: 50%;
-    padding: 3% 20px;
+    margin-bottom: 20px;
   }
 
   p {
@@ -254,8 +258,17 @@ header {
   justify-content: space-between;
   margin-bottom: 30px;
 
+  @media (max-width: 500px) {
+    flex-direction: column;
+    align-items: space-between;
+  }
+
   .paragraph {
     width: 48%;
+
+    @media (max-width: 500px) {
+      width: 100%;
+    }
     h2 {
       font-size: 1.4rem;
       font-family: @primary-text;
@@ -271,6 +284,11 @@ header {
 
   .languages {
     width: 48%;
+
+    @media (max-width: 500px) {
+      width: 100%;
+      margin-top: 30px;
+    }
 
     .lang-box {
       border: 1px solid gray;

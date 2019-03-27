@@ -144,6 +144,11 @@ hr {
   max-width: 1400px;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  .container {
+    width: 400px;
+  }
+}
 header nav {
   display: flex;
   justify-content: flex-end;
@@ -186,7 +191,7 @@ header .image-head {
   width: 20rem;
   height: 20rem;
   border-radius: 50%;
-  padding: 3% 20px;
+  margin-bottom: 20px;
 }
 header p {
   font-family: "Montserrat", sans-serif;
@@ -213,8 +218,19 @@ header button:hover {
   justify-content: space-between;
   margin-bottom: 30px;
 }
+@media (max-width: 500px) {
+  .middle-content {
+    flex-direction: column;
+    align-items: space-between;
+  }
+}
 .middle-content .paragraph {
   width: 48%;
+}
+@media (max-width: 500px) {
+  .middle-content .paragraph {
+    width: 100%;
+  }
 }
 .middle-content .paragraph h2 {
   font-size: 1.4rem;
@@ -228,6 +244,12 @@ header button:hover {
 }
 .middle-content .languages {
   width: 48%;
+}
+@media (max-width: 500px) {
+  .middle-content .languages {
+    width: 100%;
+    margin-top: 30px;
+  }
 }
 .middle-content .languages .lang-box {
   border: 1px solid gray;
